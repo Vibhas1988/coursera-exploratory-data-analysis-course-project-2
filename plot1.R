@@ -4,5 +4,5 @@ SCC <- readRDS("C:/Users/vibhas/R/exdata_data_NEI_data/Source_Classification_Cod
 Total_emission <- aggregate(Emissions ~ year, data=NEI, FUN=sum)
 
 png('plot1.png')
-barplot(height=Total_emission$Emissions, names.arg=Total_emission$year, xlab="years", ylab=expression('total PM'[2.5]*' emission'),main=expression('Total PM2.5 Emissions From All US Sources'))
+barplot(height=Total_emission$Emissions, names.arg=Total_emission$year, xlab="years", ylab=expression('total PM'[2.5]*' emission'),main=expression('Total PM2.5 Emissions at various years'))
 dev.off()
